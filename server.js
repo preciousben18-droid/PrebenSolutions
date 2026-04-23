@@ -7,7 +7,13 @@ const session = require('express-session');
 const path = require('path');
 
 const app = express();
-
+app.get('/', (req, res) => {
+  res.send(`
+    <h1>PREBEN SOLUTIONS</h1>
+    <p>Website is live 🚀</p>
+    <p>JAMB | Post UTME | NYSC | Registrations</p>
+  `);
+});
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));

@@ -67,15 +67,11 @@ const Question = mongoose.model("Question", questionSchema);
 // ===============================
 
 // Homepage
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send(`
     <h1>PREBEN SOLUTIONS</h1>
     <p>Website is live 🚀</p>
     <p>JAMB | Post UTME | NYSC | Registrations</p>
-    <hr>
-    <a href="/register">Register</a> |
-    <a href="/login">Login</a> |
-    <a href="/cbt">Start CBT</a>
   `);
 });
 

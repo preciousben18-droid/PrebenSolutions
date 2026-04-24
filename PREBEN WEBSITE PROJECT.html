@@ -18,6 +18,9 @@
 <a href="#login">Login</a>
 </nav>
 </header>
+  app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+});
 <section class="hero">
 <h1>Education Made Easy</h1>
 <p>Your one-stop portal for JAMB, Post UTME, NYSC updates, study materials and online registrations.</p>
